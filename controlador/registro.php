@@ -5,7 +5,7 @@ require '../modelo/conexion.php';
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nombre = $_POST['nombre'];
     $email = $_POST['email'];
-    $password = sha1($_POST['Password']);
+    $password = sha1($_POST['password']);
 
     $conexionObj = new Conexion();
     $conn = $conexionObj->getConexion();

@@ -1,34 +1,34 @@
 import confetti from 'canvas-confetti';
 
 const products = [
-    { id: "prod1", name: "Zapatillas Runner Pro", category: "caballeros", price: 90.0, description: "Zapatillas ultraligeras para corredores serios, con amortiguación reactiva.", image: "male_shoe.png", stock: 10 },
-    { id: "prod2", name: "Camiseta Técnica DryFit", category: "caballeros", price: 34.99, description: "Camiseta transpirable que expulsa el sudor, ideal para entrenamientos intensos.", image: "male_shirt.png", stock: 15 },
-    { id: "prod3", name: "Pantalón Corto Deportivo", category: "caballeros", price: 29.99, description: "Pantalón corto ligero y flexible para máxima movilidad.", image: "male_shorts.png", stock: 20 },
-    { id: "prod4", name: "Pantalón Corto Deportivo", category: "caballeros", price: 29.99, description: "Pantalón corto ligero y flexible para máxima movilidad.", image: "male_shorts.png", stock: 20 },
-    { id: "prod5", name: "Pantalón Corto Deportivo", category: "caballeros", price: 29.99, description: "Pantalón corto ligero y flexible para máxima movilidad.", image: "male_shorts.png", stock: 20 },
-    { id: "prod6", name: "Pantalón Corto Deportivo", category: "caballeros", price: 29.99, description: "Pantalón corto ligero y flexible para máxima movilidad.", image: "male_shorts.png", stock: 20 },
+    { id: "prod1", name: "Zapatillas Runner Pro", category: "caballeros", price: 90.000, description: "Zapatillas ultraligeras para corredores serios, con amortiguación reactiva.", image: "male_shoe.png", stock: 10 },
+    { id: "prod2", name: "Camiseta Técnica DryFit", category: "caballeros", price: 34.000, description: "Camiseta transpirable que expulsa el sudor, ideal para entrenamientos intensos.", image: "male_shirt.png", stock: 15 },
+    { id: "prod3", name: "Pantalón Corto Deportivo", category: "caballeros", price: 29.000, description: "Pantalón corto ligero y flexible para máxima movilidad.", image: "male_shorts.png", stock: 20 },
+    { id: "prod4", name: "Conjunto Deportivo", category: "caballeros", price: 50.000, description: "Conjunto deportivo unisex en color azul marino, con capucha y pantalón tipo jogger con cintura elástica y cordón ajustable. ", image: "caballero1.png", stock: 20 },
+    { id: "prod5", name: "Uniforme de Millanarios", category: "caballeros", price: 160.000, description: "Uniforme oficial de Millonarios F.C., firmado por Radamel Falcao Garcia.", image: "caballero2.png", stock: 20 },
+    { id: "prod6", name: "Uniforme de Nacional", category: "caballeros", price: 160.000, description: "Uniforme oficial de Atlético Nacional, con camiseta cuello en V.", image: "caballero3.jpg", stock: 20 },
     
 
-    { id: "prod7", name: "Leggings Alto Rendimiento", category: "damas", price: 54.99, description: "Leggings de compresión que moldean y ofrecen soporte.", image: "female_leggings.png", stock: 20 },
-    { id: "prod8", name: "Top Deportivo ImpactFlex", category: "damas", price: 29.99, description: "Top deportivo con sujeción media, perfecto para yoga o gym.", image: "female_top.png", stock: 12 },
-    { id: "prod9", name: "Chaqueta Cortavientos Ligera", category: "damas", price: 69.99, description: "Chaqueta ligera y plegable, ideal para protegerse del viento.", image: "gym.jpg", stock: 18 },
-    { id: "prod10", name: "Chaqueta Cortavientos Ligera", category: "damas", price: 69.99, description: "Chaqueta ligera y plegable, ideal para protegerse del viento.", image: "female_jacket.png", stock: 18 },
-    { id: "prod11", name: "Chaqueta Cortavientos Ligera", category: "damas", price: 69.99, description: "Chaqueta ligera y plegable, ideal para protegerse del viento.", image: "female_jacket.png", stock: 18 },
-    { id: "prod12", name: "Chaqueta Cortavientos Ligera", category: "damas", price: 69.99, description: "Chaqueta ligera y plegable, ideal para protegerse del viento.", image: "female_jacket.png", stock: 18 },
+    { id: "prod7", name: "Leggings Alto Rendimiento", category: "damas", price: 54.000, description: "Leggings de compresión que moldean y ofrecen soporte.", image: "female_leggings.png", stock: 20 },
+    { id: "prod8", name: "Top Deportivo ImpactFlex", category: "damas", price: 29.000, description: "Top deportivo con sujeción media, perfecto para yoga o gym.", image: "female_top.png", stock: 12 },
+    { id: "prod9", name: "", category: "damas", price: 55.000, description: "Conjunto deportivo dos piezas en color rojo, ofrece ajuste ceñido, comodidad y estilo ideal para entrenamientos o uso casual.", image: "dama11.png", stock: 18 },
+    { id: "prod10", name: "", category: "damas", price: 189.999, description: "Zapatillas New Balance 530 blancas con detalles plateados y negros, de estilo retro y suela robusta.", image: "dama3.png", stock: 18 },
+    { id: "prod11", name: "", category: "damas", price: 89.999, description: "Conjunto deportivo negro para dama, con top de manga larga y cuello alto.", image: "dama4.png", stock: 18 },
+    { id: "prod12", name: "", category: "damas", price: 99.999, description: "Enterizo deportivo para dama en color azul petróleo, de corte ajustado y pantalón acampanado.", image: "dama5.jpg", stock: 18 },
 
-    { id: "prod13", name: "Conjunto Deportivo Infantil", category: "ninos", price: 45.99, description: "Chándal cómodo y divertido para los más pequeños aventureros.", image: "kids_tracksuit.png", stock: 8 },
-    { id: "prod14", name: "Zapatillas Junior Sport", category: "ninos", price: 39.99, description: "Zapatillas resistentes con cierre de velcro para mayor facilidad.", image: "kids_shoe.png", stock: 10 },
-    { id: "prod15", name: "Mochila Escolar Deportiva", category: "ninos", price: 25.99, description: "Mochila espaciosa y ergonómica para libros y equipación.", image: "kids_backpack.png", stock: 15 },
-    { id: "prod16", name: "Mochila Escolar Deportiva", category: "ninos", price: 25.99, description: "Mochila espaciosa y ergonómica para libros y equipación.", image: "kids_backpack.png", stock: 15 },
-    { id: "prod17", name: "Mochila Escolar Deportiva", category: "ninos", price: 25.99, description: "Mochila espaciosa y ergonómica para libros y equipación.", image: "kids_backpack.png", stock: 15 },
-    { id: "prod18", name: "Mochila Escolar Deportiva", category: "ninos", price: 25.99, description: "Mochila espaciosa y ergonómica para libros y equipación.", image: "kids_backpack.png", stock: 15 },
+    { id: "prod13", name: "Conjunto Deportivo Infantil", category: "ninos", price: 45.000, description: "Chándal cómodo y divertido para los más pequeños aventureros.", image: "kids_tracksuit.png", stock: 8 },
+    { id: "prod14", name: "Zapatillas Junior Sport", category: "ninos", price: 39.000, description: "Zapatillas resistentes con cierre de velcro para mayor facilidad.", image: "kids_shoe.png", stock: 10 },
+    { id: "prod15", name: "Mochila Escolar Deportiva", category: "ninos", price: 25.000, description: "Mochila espaciosa y ergonómica para libros y equipación.", image: "kids_backpack.png", stock: 15 },
+    { id: "prod16", name: "", category: "ninos", price: 149.999, description: "Guayos Nike de fútbol con tacos, diseño ligero y materiales que optimizan tracción y control del balón.", image: "niño1.jpg", stock: 15 },
+    { id: "prod17", name: "", category: "ninos", price: 95.000, description: "Conjunto deportivo infantil en algodón azul marino con capucha y pantalón.", image: "niño33.png", stock: 15 },
+    { id: "prod18", name: "", category: "ninos", price: 99.999, description: "Panther azul turquesa Licra de patinaje natacion gimnasio pesas running nomadas", image: "niño4.png", stock: 15 },
 
-    { id: "prod19", name: "Balón Fútbol Champions", category: "implementos", price: 22.50, description: "Balón de fútbol tamaño 5, calidad profesional para partidos y entrenamiento.", image: "football.png", stock: 30 },
-    { id: "prod20", name: "Set Mancuernas Ajustables", category: "implementos", price: 119.00, description: "Set de mancuernas versátil, peso ajustable hasta 20kg.", image: "dumbbells.png", stock: 5 },
-    { id: "prod21", name: "Cuerda Saltar Velocidad", category: "implementos", price: 12.99, description: "Cuerda para saltar ligera y rápida, ideal para cardio y fitness.", image: "skipping_rope.png", stock: 25 },
-    { id: "prod22", name: "Balón Fútbol Champions", category: "implementos", price: 22.50, description: "Balón de fútbol tamaño 5, calidad profesional para partidos y entrenamiento.", image: "football.png", stock: 30 },
-    { id: "prod23", name: "Balón Fútbol Champions", category: "implementos", price: 22.50, description: "Balón de fútbol tamaño 5, calidad profesional para partidos y entrenamiento.", image: "football.png", stock: 30 },
-    { id: "prod24", name: "Balón Fútbol Champions", category: "implementos", price: 22.50, description: "Balón de fútbol tamaño 5, calidad profesional para partidos y entrenamiento.", image: "football.png", stock: 30 },
+    { id: "prod19", name: "Balón Fútbol Champions", category: "implementos", price: 22.000, description: "Balón de fútbol tamaño 5, calidad profesional para partidos y entrenamiento.", image: "football.png", stock: 30 },
+    { id: "prod20", name: "Set Mancuernas Ajustables", category: "implementos", price: 119.000, description: "Set de mancuernas versátil, peso ajustable hasta 20kg.", image: "dumbbells.png", stock: 5 },
+    { id: "prod21", name: "Cuerda Saltar Velocidad", category: "implementos", price: 12.000, description: "Cuerda para saltar ligera y rápida, ideal para cardio y fitness.", image: "skipping_rope.png", stock: 25 },
+    { id: "prod22", name: "Balón Fútbol Champions", category: "implementos", price: 125.000, description: "Kit de tenis Wilson con raqueta junior, bolso deportivo y pelotas de entrenamiento incluidas.", image: "imp1.jpg", stock: 30 },
+    { id: "prod23", name: "", category: "implementos", price: 99.999, description: "Balón de baloncesto Molten GG7X oficial FIBA approved, cuero sintético naranja y crema con textura profesional.", image: "imp2.jpg", stock: 30 },
+    { id: "prod24", name: "", category: "implementos", price: 169.000, description: "Kit completo de snorkel con aletas ajustables, máscara panorámica, tubo de respiración y bolsa de transporte en colores negro y azul turquesa.", image: "imp3.jpg", stock: 30 },
     
 ];
 

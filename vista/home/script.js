@@ -4,7 +4,7 @@ const products = [
     { id: "prod1", name: "Zapatillas Runner Pro", category: "caballeros", price: 90.000, description: "Zapatillas ultraligeras para corredores serios, con amortiguación reactiva.", image: "male_shoe.png", stock: 10 },
     { id: "prod2", name: "Camiseta Técnica DryFit", category: "caballeros", price: 34.000, description: "Camiseta transpirable que expulsa el sudor, ideal para entrenamientos intensos.", image: "male_shirt.png", stock: 15 },
     { id: "prod3", name: "Pantalón Corto Deportivo", category: "caballeros", price: 29.000, description: "Pantalón corto ligero y flexible para máxima movilidad.", image: "male_shorts.png", stock: 20 },
-    { id: "prod4", name: "Conjunto Deportivo", category: "caballeros", price: 50.000, description: "Conjunto deportivo unisex en color azul marino, con capucha y pantalón tipo jogger con cintura elástica y cordón ajustable. ", image: "caballero1.png", stock: 20 },
+    { id: "prod4", name: "Conjunto Deportivo", category: "caballeros", price: 50.000, description: "Conjunto deportivo unisex, con capucha y pantalón tipo jogger con cintura elástica y cordón ajustable. ", image: "caballero1.png", stock: 20 },
     { id: "prod5", name: "Uniforme de Millanarios", category: "caballeros", price: 160.000, description: "Uniforme oficial de Millonarios F.C., firmado por Radamel Falcao Garcia.", image: "caballero2.png", stock: 20 },
     { id: "prod6", name: "Uniforme de Nacional", category: "caballeros", price: 160.000, description: "Uniforme oficial de Atlético Nacional, con camiseta cuello en V.", image: "caballero3.jpg", stock: 20 },
     

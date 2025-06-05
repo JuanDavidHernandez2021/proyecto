@@ -21,11 +21,11 @@ require_once '../../modelo/conexion.php';
                <nav>
                 <ul style=  "list-style-type: none; display: flex; gap: 60px; margin: 0; padding: 0">
 
-                    <li><a href="#" class="nav-link active" data-category="inicio">inicio</a></li>
-                    <li><a href="#" class="nav-link" data-category="caballeros">caballeros</a></li>
-                    <li><a href="#" class="nav-link" data-category="damas">damas</a></li>
-                    <li><a href="#" class="nav-link" data-category="ninos">niños</a></li>
-                    <li><a href="#" class="nav-link" data-category="implementos">implementos</a></li>
+                    <li><a href="#" class="nav-link active" data-category="inicio">Inicio</a></li>
+                    <li><a href="#" class="nav-link" data-category="caballeros">Caballeros</a></li>
+                    <li><a href="#" class="nav-link" data-category="damas">Damas</a></li>
+                    <li><a href="#" class="nav-link" data-category="ninos">Niños</a></li>
+                    <li><a href="#" class="nav-link" data-category="implementos">Implementos</a></li>
                 </ul>
             </nav>
 
